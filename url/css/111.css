@@ -1,0 +1,283 @@
+*{
+	padding:0;margin:0;
+}
+ul,li{
+	list-style: none;
+}
+li:hover{
+	background:#00a0e9!important;
+	color:white!important;
+}
+a{
+	text-decoration:none;
+	color:#ccc;
+}
+html,body{
+	width:100%;
+	height:100%;
+}
+img{
+	display: block;
+	border:0;
+}
+.wrap{
+	width:100%;height:100%;
+	overflow:hidden;
+	background:url("../img/bj.jpg")center top no-repeat;
+	position:relative;
+
+}
+.door{
+	width:100%;height:100%;
+	position:absolute;top:0;
+
+}
+.door p{
+	display:none;
+}
+.door img{
+	height:100%;
+	border:0;
+	margin:0 auto;
+
+}
+.door_top{
+	position:absolute;
+	top:0px;
+	height:100%;
+	width:100%;
+	z-index:999;
+}
+
+.door_bottom{
+	position:absolute;
+	bottom:0px;
+	height:100%;
+	width:100%;
+	z-index:999;
+}
+.content{
+	width: 1280px;
+	height:720px;
+	position:absolute;
+	top:50%;margin-top:-360px;
+	left:50%;margin-left:-640px;
+	background: rgba(68,185,255,0.5);
+	visibility: hidden;
+	padding:30px;
+
+}
+.move_top{
+	animation:move_t 2.1s 1s linear forwards;
+}
+.move_bottom{
+    animation:move_b 2.1s 1s linear forwards;
+}
+@keyframes move_t{
+	0% { top:0;}
+	33% {top:-40px;}	
+	100% {top:-100%;}
+}
+@keyframes move_b{
+	0% { bottom:0;}
+	33% {bottom:-40px;}
+	100% {bottom:-100%;}
+}
+
+/*圆圈旋转*/
+.xz1{
+	width:100px;
+	height:100px;
+	position:relative;
+	top:50;left:20px;
+}
+.xz1 img{
+	width:100%;
+	position:absolute;top:0;
+	transform: 
+}
+.resume{
+	position:absolute;
+	left:120%;
+	top:45%;
+	margin-top:1rem;
+	line-height:2.0rem;
+	font-size:2.0rem;
+	width:200%;
+}
+.underline{
+	background:#00a0e9;
+	position:absolute;
+	width:250%;
+	height:3px;
+	top:6rem;
+	left:50%;
+	animation:underlin 2s linear infinite;
+}
+@keyframes underlin{
+	0% {width:250%;}
+	25% {width:300%;}
+	50% {width:250%;}
+	75% {width:200%;}
+	100% {width:250%;}
+}
+.quan1{
+	animation:quan 1.5s ease infinite;
+}
+.quan3{
+	animation:quan 2s ease infinite;
+}
+.quan2{
+	animation:quan_t 2s -0.5s ease infinite;
+}
+@keyframes quan{
+	0% {transform:rotate(0deg)}
+	33% {transform:rotate(60deg)}
+	66% {transform:rotate(300deg)}
+	100% {transform:rotate(360deg)}
+}
+@keyframes quan_t{
+	0% {transform:rotate(360deg)}
+	33% {transform:rotate(280deg)}
+	66% {transform:rotate(100deg)}
+	100% {transform:rotate(0deg)}
+}
+
+/*条状统计图*/
+.strip{
+	width:200px;height:150px;
+	position:absolute;
+	bottom:50px;right:30px;
+	/*vertical-align:bottom;*/
+}
+.strip ul{
+	width:100%;height:100%;
+	display: flex;
+	align-items:flex-end;
+	justify-content: flex-start;
+}
+.strip li{
+	background:#00a0e9;
+	width:10px;height:100px;
+	margin-left: 10px;
+
+}
+.strip .strip_li:nth-of-type(1){
+	animation:strip 2s -0.5s linear infinite;
+}
+.strip .strip_li:nth-of-type(2){
+	animation:strip_t 2s -1s linear infinite;
+}
+.strip .strip_li:nth-of-type(3){
+	animation:strip 2s -1s linear infinite;
+}
+.strip .strip_li:nth-of-type(4){
+	animation:strip_t 2.3s -0.5s linear infinite;
+}
+.strip .strip_li:nth-of-type(5){
+	animation:strip 2s -0.3s linear infinite;
+}
+.strip .strip_li:nth-of-type(6){
+	animation:strip_t 2.2s linear infinite;
+}
+.strip .strip_li:nth-of-type(7){
+	animation:strip 2s -0.5s linear infinite;
+}
+.strip .strip_li:nth-of-type(8){
+	animation:strip_t 2.5s linear infinite;
+}
+@keyframes strip{
+	0% {height:100px;}
+	25% {height:50px;}
+	50% {height:100px;}
+	75% {height:150px;}
+	100% {height:100px;}
+}
+@keyframes strip_t{
+	0% {height:100px;}
+	25% {height:150px;}
+	50% {height:100px;}
+	75% {height:50px;}
+	100% {height:100px;}
+}
+
+/*内容*/
+.text_ul{
+	margin-top: 20px;
+	margin-left:20px;
+}
+.swiper-slide .text_ul b{
+	padding:3px 0 3px 35px;
+	box-sizing: border-box;
+	background: url("../img/text.png")bottom center no-repeat;
+	 background-size:100% 100%;
+	 line-height:30px;
+	 font-size: 18px;
+}
+.swiper-slide span{
+	line-height:30px;
+	 font-size: 18px;
+}
+.text_ul li{
+	background: rgba(255,255,255,0.5);
+	width:300px;
+	margin-bottom:10px;
+	padding:8px;
+	border-radius:5px;
+}
+
+/*专业技能*/
+.major{
+	position:absolute;
+	top:50px;left: 500px;
+	width:600px;height:300px;
+	border-radius:5px;
+	background:rgba(255,255,255,0.5);
+	padding:20px;
+	box-sizing: border-box;
+}
+.major b{
+	height:100%;float:left;
+}
+.major div{
+	height:100%;width: 450px;
+	float:left;
+}
+.major b,.major p{
+	display:inline-block;
+	margin-top:8px;
+}
+.major p{
+	width:100%;
+	padding:5px 5px;
+	line-height: 20px;
+	background:rgba(250,250,250,0.7);
+	border-radius:5px;
+}
+.evaluate{
+	position:absolute;
+	top:370px;left: 500px;
+	width:600px;height:300px;
+	border-radius:5px;
+	background:rgba(255,255,255,0.5);
+	padding:20px;
+	box-sizing: border-box;
+}
+.evaluate p{
+	width:100%;
+	padding:5px 5px;
+	line-height: 20px;
+	background:rgba(250,250,250,0.7);
+	border-radius:5px;
+}
+.evaluate b,.evaluate p{
+	display:inline-block;
+	margin-top:8px;
+}
+.evaluate b{
+	height:100%;float:left;
+}
+.evaluate div{
+	height:100%;width: 450px;
+	float:left;
+}
