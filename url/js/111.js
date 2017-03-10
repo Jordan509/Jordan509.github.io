@@ -20,7 +20,8 @@ function start(){
 
 		var aleft = document.querySelectorAll(".aleft");
 		var aright = document.querySelectorAll(".aright");
-
+		var off = true;
+		var on = true;
 		var time = 0;
 		var time_2 = 0;
 
@@ -35,22 +36,31 @@ function start(){
 			for(var i = 0; i < collect.length; i++){
 				var now = collect[i];
 				var top = now.getBoundingClientRect().top;
-				if(top > 0 && top < winh){
+				if(top > 0 && top < winh && off == true){
+					if(i == collect.length-1){
+						off = false;
+					}
 					now.style.visibility = "visible";
 					now.style.animationDelay = time + "s";
 					now.classList.add("animated",effect);
-
 					time += 0.2;
+					console.log(i)
+					console.log(collect.length)
 				}else{
 					time = 0;
+
 				}
+
 			}
 		}
 		function load_t(collect,effect){
 			for(var i = 0; i < collect.length; i++){
 				var now = collect[i];
 				var top = now.getBoundingClientRect().top;
-				if(top > 0 && top < winh){
+				if(top > 0 && top < winh && on == true){
+					if(i == collect.length-1){
+						on = false;
+					}
 					now.style.visibility = "visible";
 					now.style.animationDelay = time_2 + "s";
 					now.classList.add("animated",effect);
