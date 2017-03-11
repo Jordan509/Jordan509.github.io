@@ -19,6 +19,8 @@ img{
 	border:0;
 }
 .wrap{
+	overflow-x:hidden;
+	-webkit-overflow-x: hidden;
 	width:100%;height:100%;
 
 /*	overflow:hidden;*/
@@ -29,10 +31,10 @@ img{
 
 }
 .door{
-	width:100%;height:100%;
-	position:absolute;top:0;
 	overflow-x:hidden;
 	-webkit-overflow-x: hidden;
+	width:100%;height:100%;
+	position:absolute;top:0;
 }
 .door img{
 	display:none;
@@ -237,8 +239,8 @@ img{
 
 /*内容*/
 .text_ul{
-	height:50rem;
 	width:100%;
+	height:100%;
 	margin-top:4.5rem;
 }
 .swiper-slide .text_ul b{
@@ -262,7 +264,7 @@ img{
 
 /*专业技能*/
 .major{
-	height:30rem;
+	height:100%;
 	width:100%;
 	border-radius:5px;
 	background:rgba(255,255,255,0.3);
@@ -279,12 +281,12 @@ img{
 }
 .major p{
 	margin-top: 20px;
-	line-height: 20px;
+	line-height: 25px;
 	background:rgba(250,250,250,0.6);
 	border-radius:5px;
 }
 .evaluate{
-	height:30rem;
+	height:100%;
 	width:100%;
 	border-radius:5px;
 	background:rgba(255,255,255,0.3);
@@ -295,7 +297,7 @@ img{
 	width:100%;
 	margin-top: 20px;
 	padding:5px 5px;
-	line-height: 20px;
+	line-height: 25px;
 	background:rgba(250,250,250,0.6);
 	border-radius:5px;
 	box-sizing: border-box;
