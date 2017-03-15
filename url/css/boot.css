@@ -1,0 +1,235 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+ul,li{
+	list-style: none;
+}
+h1{
+	color:#fff;
+	font-size:3em;
+	font-weight: 400;
+}
+img{
+	width:100%;
+}
+html,body {
+  color: #505050;
+  line-height: 1.75em;
+  background: #ebebeb;
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
+.menu a:hover{
+	color:#2a94f6!important;
+	text-decoration: none;
+}
+a{
+	color:black;
+	text-decoration: none!important;
+}
+.mai-header{
+	background: url("../img/boot/header.jpg");
+	background-size:100% auto;
+	text-align: center;
+  	padding: 45px 0;
+  	background-color: #2a94f6;
+}
+.header{
+/*	display: flex;
+	justify-content: center;*/
+	text-align:center;
+}
+
+.labels{
+	text-align:center;
+}
+.labels a{
+	margin:10px auto;
+	color:white;
+}
+.labels a:hover{
+	background:black;
+	color:white;
+	transition:0.6s;
+	border-color:black;
+}
+nav{
+	background:white;
+	margin-bottom: 30px;
+}
+.menu{
+	display: flex;
+	justify-content: center;
+	flex-wrap:wrap;
+	}
+.menu li{
+
+}
+.menu a{
+	padding:0 21px;
+	line-height:4em;
+	color:#505050;
+}
+.menu li:nth-of-type(1){
+	border-bottom:2px solid #117adb;
+}
+.btn {
+  padding: 7px 14px;
+  border-radius: 2px;
+}
+.home-template .main-header {
+  padding-top: 62px;
+  padding-bottom: 62px;
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.btn-doc {
+  position: relative;
+  bottom: -40px;
+  border: 1px solid #117adb;
+  background-color: transparent;
+}
+@media only screen and (max-width: 767px) {
+  .btn-doc {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .mai-header{
+  	background: #2a94f6!important;
+  }
+}
+
+.main-content{
+	
+	box-sizing: border-box;
+}
+.post{
+	padding:30px;
+	background:#fff;
+	margin-bottom: 30px;
+}
+.post-title{
+	line-height:1em;
+	font-size:2em;
+	text-align:center;
+	margin:0;
+	padding-bottom: 10px;
+}
+.post-title a{
+	display: block;
+	margin:0 auto;
+}
+.post-meta{
+	text-align:center;
+}
+.featured-media{
+	margin-top:10px;
+	width:100%;
+}
+.featured-media img{
+	padding-bottom:10px;
+}
+
+/*右边*/
+.widget{
+	background:white;
+	margin-bottom:30px;
+	padding:21px 30px;
+}
+.widget .title{
+	font-weight:500;
+	padding-bottom: 10px;
+	border-bottom:1px #ccc solid;
+	
+}
+.widget .tag-cloud a {
+  border: 1px solid #ebebeb;
+  padding: 2px 7px;
+  color: #959595;
+  line-height: 1.5em;
+  display: inline-block;
+  margin: 0 7px 7px 0;
+  -webkit-transition: all 0.2s ease;
+       -o-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+.widget .tag-cloud a:hover{
+	 border: 1px solid #2a94f6;
+	 background:#2a94f6;
+	 color:white;
+}
+
+/*页脚*/
+.main-footer{
+	background:#202020;
+}
+.main-footer .widget{
+	background:#202020;
+}
+.main-footer .widget .title{
+	color:white;
+}
+.main-footer .widget a{
+	color:#959595;
+}
+.main-footer .recent-single-post a:hover{
+	color:#2a94f6;
+}
+.date{
+	padding-bottom:5px;
+	border-bottom: 1px #504533 dashed;
+}
+#back-to-top{
+	height:40px;
+	width:100%;
+	font-size: 40px;
+	text-align:center;
+	line-height: 50px;
+	background:#ccc;
+	border:1px black solid;
+	-webkit-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.copyright{
+	text-align:center;
+}
+#back-to-top:hover{
+	background:#2a94f6;
+	color:#fff;
+	border:1px #2a94f6 solid;
+}
+/*默认样式，主要是position:fixed实现屏幕绝对定位*/
+#gotoTop{
+	text-align: center;
+	display:none;
+	position:fixed;
+	top:60%;left:90%;
+	cursor:pointer;
+	margin-top:10%;
+	margin-right:10%;
+	padding:10px;
+	width:40px;
+	text-align:center;
+	border:1px solid #e0e0e0;
+	background:#fff;
+}
+/*用CSS表达式(expression)来实现ie6下position:fixed效果*/
+#gotoTop{
+	_position:absolute;
+	_top:expression(documentElement.scrollTop + documentElement.clientHeight * 3/4 + "px")
+}
+/*鼠标进入的反馈效果*/
+#gotoTop.hover{
+	border:#e0e0e0;
+	background:#2a94f6;
+	color:#fff;
+	text-decoration:none;
+}
