@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="wap-font-scale" content="no">
+	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+
+	<div class="container">
+		
+		<header class="header">
+			<a href="javascript:window.history.back()" class="tui"> < </a>
+			登录
+		</header>
+		<form class="form">
+			<div>
+				<input type="text" placeholder="用户名/邮箱/已验证" name="username">
+			</div>
+			<div class="psw">
+				<input type="password" placeholder="请输入密码" name="password">
+				<div class="psw-ctrl">
+					<span></span>
+				</div>
+			</div>
+			<div class="verify">
+				<input type="vcode" placeholder="请输入验证码" name="vcode">
+				<div class="verify_div"> | 7yXC </div>
+			</div>
+			<div class="form_finally">
+				<input type="submit" value="登录" class="submit">
+			</div>
+		</form>
+		<div class="base">
+			<a href="#">找回密码</a>
+			<a href="register.html">快速注册</a>
+		</div>
+			
+	</div>
+
+</body>
+<script src="js/login.js"></script>
+</html>

@@ -1,0 +1,170 @@
+header{
+	height:1.25rem;
+	border-bottom: 1px #dddddd solid;
+
+	-webkit-display: flex;
+	display: flex; 
+	position:;
+	padding:0 3%;
+	align-items:center;
+	
+}
+.wrap{
+	position:fixed;
+	z-index:10;
+	background:white;
+	width:100%;
+}
+
+header .back{
+	width:0.625rem;
+	height: 100%;
+	line-height: 1.25rem;
+	font-size: 0.4062rem;
+    font-family: "SimSun";
+}
+
+header form{
+	flex: 1;
+	position: relative;
+}
+
+header form input{
+	width:100%;
+	height: 0.7812rem;
+	border:0;
+	background-color:#f7f7f7;
+	padding-left:5px;
+	box-sizing: border-box;
+	outline: none;
+	border-radius: 4px;
+}
+
+header form em{
+	display: block;
+	position: absolute;
+	right:10px;
+	top:0;
+	width:0.4219rem;
+	height: 100%;
+	background:url("../img/icon_search2.png") 0 center no-repeat;
+	background-size: 100%;
+}
+
+header span{
+	display: block;
+	line-height: 1.25rem;
+	width:0.9375rem;
+	text-align: right;
+}
+.screen{
+	width:100%;
+
+	border-bottom: 1px #dddddd solid;
+
+	-webkit-display: flex;
+	display: flex; 
+	justify-content:space-around;
+	box-sizing: border-box;
+	padding:0 3%;
+}
+.screen a{
+	padding:0.1562rem 2%;
+	
+}
+.screen > a:nth-of-type(1){
+	border-bottom:2px red solid;
+}
+.screen > a:nth-of-type(3){
+	vertical-align: top;
+	display:flex;
+}
+.goods{
+	padding-top:2.5rem;
+	display:flex;
+	width:100%;
+	flex-wrap:wrap;
+	background:#f7f7f7;
+}
+.goods li{
+	width:42.5%;
+	margin-left: 5%;
+	background:white;
+	margin-bottom: 0.5rem;
+}
+.goods li img{
+	width: 100%;
+}
+.goods li p:nth-of-type(1){
+	margin-top:0.1562rem;
+}
+.goods li p:nth-of-type(2){
+	line-height:0.7812rem;
+}
+.goods li p span{
+	font-size:16px;color:red;
+}
+.goods li p s{
+	font-size:12px;color:#ccc;
+}
+.icon{
+	width:0.9375rem;
+	position:fixed;
+	right:0.5rem;
+	bottom:0.5rem;
+}
+.icon img{
+	width:100%;
+}
+.changelist{
+	margin-bottom:0.1562rem;
+}
+.sort{
+	width:1.5rem;
+	position:absolute;
+	bottom:-1.6375rem;
+	left:4.25rem;
+	box-sizing:border-box;
+	visibility: hidden;
+}
+.sort a{
+	text-align: center;
+	display: block;
+	width:100%;
+	line-height:0.3125rem;
+	height:0.4688rem;
+	border:1px #dddddd solid;
+	border-top:none;
+	background:white;
+}
+/* loading */
+.loading{
+	height:0.9375rem;
+	line-height:0.9375rem;
+	text-align: center;
+	background: #f7f7f7;
+	color:#ccc;
+}
+
+.loading img{
+	display: inline-block;
+	height:0.625rem;
+	-webkit-animation: loading 1s linear infinite ;
+	animation: loading 1s ease linear infinite ;
+}
+
+@keyframes loading{
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg);}
+}
+.loading{
+	width:100%;
+}
+.loading *{
+	vertical-align: middle;
+	margin:0 auto;
+}
+.content{
+	width:100%;
+	height:100%;
+}
